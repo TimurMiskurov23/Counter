@@ -8,12 +8,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var count = 0
+    @IBOutlet weak var pushMeButton: UIButton!
+    @IBOutlet weak var tapsCounterLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        tapsCounterLabel.text = "Значение счетчика: 0"
     }
 
-
+    @IBAction func countPushes() {
+        count += 1
+        tapsCounterLabel.text = "Значение счетчика: \(count)"
+    }
+    
 }
 
