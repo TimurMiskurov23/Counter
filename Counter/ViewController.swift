@@ -7,7 +7,7 @@
 
 import UIKit
 
-private class ViewController: UIViewController {
+ class ViewController: UIViewController {
     var count = 0
     @IBOutlet weak var pushMeButton: UIButton!
     @IBOutlet weak var tapsCounterLabel: UILabel!
